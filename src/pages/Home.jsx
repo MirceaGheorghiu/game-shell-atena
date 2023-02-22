@@ -1,12 +1,12 @@
-import { useEffect, useState } from "react";
-import { Layout } from "../layouts";
-import { client as usersApi } from "./../api/users";
+import { useEffect, useState } from 'react';
+import { Layout } from '../layouts';
+import { client as usersApi } from './../api/users';
 
 export const Home = () => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    usersApi.get("/users").then((response) => {
+    usersApi.get('/users').then((response) => {
       const { data } = response;
 
       setUsers(data);

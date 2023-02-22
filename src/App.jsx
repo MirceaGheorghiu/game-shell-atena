@@ -1,9 +1,9 @@
-import { FourOhFour, Home } from "./pages";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { FourOhFour, Home } from './pages';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <Home></Home>,
     errorElement: <FourOhFour></FourOhFour>,
   },
