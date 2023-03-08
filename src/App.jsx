@@ -16,12 +16,12 @@ const router = createBrowserRouter([
     element: <Play></Play>,
   },
   {
-    path: '/ranks',
-    element: <Ranks></Ranks>,
+    path: '/ranks/:userId',
+    element: <Rank></Rank>,
   },
   {
-    path: '/rank',
-    element: <Rank></Rank>,
+    path: '/ranks',
+    element: <Ranks></Ranks>,
   },
 ]);
 
